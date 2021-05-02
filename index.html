@@ -18,7 +18,7 @@
   
   <div class="wrapper">
     <main class="wrapper__main">
-      <figure class="wrapper__logo">
+      <figure class="wrapper__logoFigure">
         <img src="images/logo.svg" alt="logo C" >
       </figure>
       
@@ -46,18 +46,23 @@
         meaning you can access your snippets immediately on all your
         devices. Our Mac and iOS apps will help you organize everything.
       </p>
-      <img src="images/image-computer.png" alt="a computer" >
-      
-      <h3 class="wrapper__title">Quick Search</h3>
-      <p>Easily search your snippets by content, category, web address, application, and more.</p>
-      
-      <h3 class="wrapper__title">iCloud Sync</h3>
-      <p>Instantly saves and syncs snippets across all your devices.</p>
-      
-      <h3 class="wrapper__title">Complete History</h3>
-      <p>Retrieve any snippets from the first moment you started using the app.</p>
+      <div class="wrapper__snippets__grid-component">
+  
+        <img src="images/image-computer.png" alt="a computer" >
+  
+          <div>
+            <h3 class="wrapper__title">Quick Search</h3>
+            <p>Easily search your snippets by content, category, web address, application, and more.</p>
     
-    </section>
+            <h3 class="wrapper__title">iCloud Sync</h3>
+            <p>Instantly saves and syncs snippets across all your devices.</p>
+    
+            <h3 class="wrapper__title">Complete History</h3>
+            <p>Retrieve any snippets from the first moment you started using the app.</p>
+          </div>
+        </div>
+
+      </section>
 
     <section class="wrapper__clipboard ">
       <h2 class="wrapper__title">Access Clipboard Anywhere</h2>
@@ -74,34 +79,32 @@
       <h2 class="wrapper__title">Supercharge your workflow</h2>
       <p>We’ve got the tools to boost your productivity.</p>
 
-        <section class="wrapper__workflow__productivity-tools">
-          <section>
-            <img src="images/icon-blacklist.svg" alt="">
-            <h3 class="wrapper__title">Create blacklists</h3>
-            <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+          <section class="wrapper__workflow__productivity-tools">
+            <section>
+              <img src="images/icon-blacklist.svg" alt="">
+              <h3 class="wrapper__title">Create blacklists</h3>
+              <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+            </section>
+            <section>
+              <img src="images/icon-text.svg" alt="">
+              <h3 class="wrapper__title">Plain text snippets</h3>
+              <p>Remove unwanted formatting from copied text for a consistent look.</p>
+            </section>
+            <section>
+              <img src="images/icon-preview.svg" alt="">
+              <h3 class="wrapper__title">Sneak preview</h3>
+              <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+            </section>
           </section>
-
-          <section>
-            <img src="images/icon-text.svg" alt="">
-            <h3 class="wrapper__title">Plain text snippets</h3>
-            <p>Remove unwanted formatting from copied text for a consistent look.</p>
-          </section>
-
-          <section>
-            <img src="images/icon-preview.svg" alt="">
-            <h3 class="wrapper__title">Sneak preview</h3>
-            <p>Quick preview of all snippets on your Clipboard for easy access.</p>
-          </section>
-        </section>
 
     </section>
     <section class="wrapper__logo">
 
-      <img src="images/logo-google.png" alt="" class="wrapper__logo__image">
-      <img src="images/logo-ibm.png" alt="" class="wrapper__logo__image">
-      <img src="images/logo-microsoft.png" alt="" class="wrapper__logo__image">
-      <img src="images/logo-hp.png" alt="" class="wrapper__logo__image">
-      <img src="images/logo-vector-graphics.png" alt="" class="wrapper__logo__image">
+      <img src="images/logo-google.png" alt="" class="wrapper__logo__image" style="width:140px;">
+      <img src="images/logo-ibm.png" alt="" class="wrapper__logo__image" style="width:110px;">
+      <img src="images/logo-microsoft.png" alt="" class="wrapper__logo__image" style="width:130px;">
+      <img src="images/logo-hp.png" alt="" class="wrapper__logo__image" style="width:110px;">
+      <img src="images/logo-vector-graphics.png" alt="" class="wrapper__logo__image" style="width:110px;">
 
     </section>
     <section class="wrapper__clipboard-mac-ios">
@@ -120,25 +123,34 @@
     </section>
     
   </div>
-  <footer class="footer-c">
-    <img src="images/logo.svg" alt="logo C" >
 
-    <ul>
-      <li><a href="#">FAQs</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Press Kit</a></li>
-      <li><a href="#">Install Guide</a></li>
-    </ul>
-    <div class="footer-c__icons">
-      <img src="images/icon-facebook.svg" alt="facebook">
-      <img src="images/icon-twitter.svg" alt="twitter">
-      <img src="images/icon-instagram.svg" alt="instagram">
+  <footer class="footer-c">
+
+    <div class="footer-c__logo-faq">
+      <img src="images/logo.svg" alt="logo C" >
+      <ul class="footer-c__logo-faq__option">
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Press Kit</a></li>
+        <li><a href="#">Install Guide</a></li>
+      </ul>
     </div>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="footer-c__icons">
+      <i class="fab fa-facebook-square"></i>     
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    
+
+
+    
   </footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </p>
+  <script src="https://kit.fontawesome.com/84349f1ad0.js" crossorigin="anonymous"></script>
+  
 </body>
 </html>
