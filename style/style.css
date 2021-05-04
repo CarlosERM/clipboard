@@ -1,6 +1,9 @@
 .attribution { font-size: 11px; text-align: center; position:absolute; top:0; margin:0 auto;}
 .attribution a { color: hsl(228, 45%, 44%); }
-
+:focus {
+    outline:1px solid red;
+    outline-offset: 0.5em;
+}
 :root {
     /* PRIMARY */
     --strong-cyan:hsl(171, 66%, 44%);
